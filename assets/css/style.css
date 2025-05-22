@@ -181,11 +181,12 @@ html {
 
 #slider .text-heading {
     font-size: 24px;
-    font-weight: lighter;
+    
 }
 
 #slider .text-description {
     margin-top: 25px;
+    text-shadow: 0 0 2px #000;
 }
 
 #content .content-section {
