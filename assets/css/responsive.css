@@ -5,6 +5,39 @@
     } */
 }
 
+/* Tablet & mobile */
+@media (max-width: 1023px) {
+    .place-buy-btn {
+        padding: 15px 16px;
+    }
+
+    #nav .subnav a {
+        padding: 15px 12px;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+    }
+
+    .social-list a {
+        margin: 0 10px;
+        font-size: 30px;
+    }
+
+    .copyright {
+        font-size: 20px;
+    }
+    
+    .copyright a{
+        padding: 12px 0;
+        display: inline-block;
+    }
+
+    .contact-info {
+        line-height: 2;
+    }
+}
+
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
 
@@ -60,7 +93,7 @@
     }
 
     .contact-form {
-        margin-top: 16px;
+        margin-top: 32px;
     }
 
     .s-mt-8 {
