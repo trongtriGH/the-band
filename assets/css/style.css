@@ -19,6 +19,7 @@ html {
     display: block;
     clear: both;
 }
+
 .col {
     float: left;
     padding: 0 8px;
@@ -55,10 +56,6 @@ html {
 .text-center {
     text-align: center !important;
 }
-
-/* #main {
-    overflow: hidden;
-} */
 
 #header {
     position: fixed;
@@ -221,7 +218,6 @@ html {
 }
 
 #content .member-list {
-    height: 286px;
     padding: 32px 0;
 }
 
@@ -231,7 +227,7 @@ html {
 
 #content .member-list img {
     width: 153px;
-    height: 153px;
+    height: auto;
     margin-bottom: 16px;
     border-radius: 4px;
 }
@@ -272,7 +268,7 @@ html {
 }
 
 .place-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img {

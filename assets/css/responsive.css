@@ -49,4 +49,12 @@
         color: #fff;
         padding: 12px 41px;
     }
+
+    #content .member-list img {
+        width: 60%;
+    }
+
+    .s-col-full {
+        width: 100%;
+    }
 }
