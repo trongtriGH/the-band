@@ -24,11 +24,29 @@
         display: inline-block;
     }
 
+    #nav li a {
+        padding: 1px 24px;
+    }
+
     #header .search-btn {
         display: none;
     }   
 
     #header .mobile-menu-btn {
         display: block;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 12px 41px;
     }
 }

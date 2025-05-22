@@ -18,7 +18,7 @@
                     <li><a href="#tour">Tour</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li>
-                        <a href="#">
+                        <a href="#" class="have-subnav">
                             More
                             <i class="nav-arrow-down ti-angle-down"></i>
                         </a>
@@ -248,11 +248,18 @@
 
             const menuItems = document.querySelectorAll('#nav li a[href*="#"]');
             for (const item of menuItems) {
-                item.addEventListener('click', function() {
-                    header.classList.remove('open');
-                });
+                if (item.classList.contains('have-subnav')) {
+                    item.addEventListener('click', function (event) {
+                        event.preventDefault(); 
+                    });
+                    continue;
+                }
+                else {
+                    item.addEventListener('click', function () {
+                        header.classList.remove('open');
+                    });
+                }     
             }
-
         </script>
     </body>
 </html>
