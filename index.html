@@ -6,7 +6,8 @@
         <title>The band</title>
         <link rel="icon" href="./assets/img/favicon/music-note.png" type="image/x-icon" />
         <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+        <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css"> 
     </head>
     <body>
         <div id="main">
@@ -31,6 +32,10 @@
 
                 <div class="search-btn">
                     <i class="search-icon ti-search"></i>
+                </div>
+
+                <div id="mobile-menu" class="mobile-menu-btn">
+                    <i class="menu-icon ti-menu"></i>
                 </div>
 
             </div>
@@ -233,6 +238,21 @@
             modalContainer.addEventListener('click', function(event) {
                 event.stopPropagation();
             });
+
+            const header = document.querySelector('#header');
+            const mobileMenu = document.querySelector('#mobile-menu');
+
+            mobileMenu.addEventListener('click', function() {
+                header.classList.toggle('open');
+            });
+
+            const menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+            for (const item of menuItems) {
+                item.addEventListener('click', function() {
+                    header.classList.remove('open');
+                });
+            }
+
         </script>
     </body>
 </html>
